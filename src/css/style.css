@@ -29,6 +29,8 @@ body {
 #pokedex-img {
 	position: absolute;
   bottom: 0;
+	pointer-events: none;
+	user-select: none;
 }
 
 #pokemon-img {
@@ -36,6 +38,8 @@ body {
   left: 50%;
 	transform: translate(-50%, -18%);
 	height: 18%;
+	pointer-events: none;
+	user-select: none;
 }
 
 #pokemon-name {
