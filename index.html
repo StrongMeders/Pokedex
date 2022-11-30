@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/pokebola.png" />
@@ -7,32 +7,37 @@
     <title>Pokédex</title>
   </head>
   <body>
-    <div id="app">
+    
       <div id="pokedex">
-        <img src="" alt="pokémon" class="pokemon-image">
-        <img src="./public/pokedex.png" alt="pokédex">
 
-        <div id="pokemon-name">
-          <span id="number">aa</span> -
-          <span id="name">aa</span>
+        
+          <img src="./public/pokedex.png" alt="pokédex" id="pokedex-img">
+        
+
+        <div id="pokemon-img">
+          <img src="#" alt="pokémon" class="pokemon-image">
         </div>
 
-        <form>
+        <div id="pokemon-name">
+          <span id="number"></span> -
+          <span id="name"></span>
+        </div>
+
+        <form id="search">
           <input 
           type="search"
           required
           placeholder="nome ou número"
-          class="search-pokemon"
+          id="ipt-search"
           />
         </form>
 
         <div id="button">
-          <button>&lt;&#45;&#45; Voltar</button>
-          <button>Próximo &#45;&#45;&gt;</button>
+          <button class="back">&lt;&#45;&#45; Voltar</button>
+          <button class="next">Próximo &#45;&#45;&gt;</button>
         </div>
 
       </div>
-    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>
